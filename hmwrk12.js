@@ -74,12 +74,12 @@ function countProps(obj) {
     const keys = Object.keys(obj);
     return keys.length;
 }
-const userLen = {
+const userA = {
     name: "Mykola",
     age: 12,
     hobby: "basketball"
 };
-console.log(countProps(userLen));
+console.log(countProps(userA));
 
 const team = {
     Mykola: 67,
@@ -100,7 +100,7 @@ function findBestEmployee(employees) {
 }
 console.log(findBestEmployee(team));
 
-const sallerry = {
+const sallary = {
     oleksandr: 3288,
     dmytro: 2745,
     andriy: 3012,
@@ -115,7 +115,7 @@ function countTotalSalary(employees) {
     }
     return total;
 }
-console.log(countTotalSalary(sallerry));
+console.log(countTotalSalary(sallary));
 
 function getAllPropValues(arr, prop) {
     const newArr = [];
@@ -146,12 +146,12 @@ function calculateTotalPrice(allProducts, productName) {
     }
     return totalPrice;
 }
-const product = [
+const product2 = [
     { name: "Apple", price: 50, quantity: 5 },
     { name: "Carrot", price: 20, quantity: 10 },
     { name: "Banana", price: 30, quantity: 7 },
     { name: "Potato", price: 15, quantity: 20 }
 ];
-console.log(calculateTotalPrice(product, "Apple"));
-console.log(calculateTotalPrice(product, "Potato"));
-console.log(calculateTotalPrice(product, "Orange"));
+console.log(calculateTotalPrice(product2, "Apple"));
+console.log(calculateTotalPrice(product2, "Potato"));
+console.log(calculateTotalPrice(product2, "Orange"));
